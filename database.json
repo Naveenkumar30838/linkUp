@@ -1,0 +1,50 @@
+[
+  {
+    "username": "Naveen",
+    "posts": [
+      {
+        "id": 123,
+        "likes": 23,
+        "content": "Hi this is Naveen Hi this is Naveen lorem  Kumar and with this text , i am successfully testing a full fleshed Patch is Naveen lorem  Kumar and with this t i this is Naveen lorem  Kumar and with this text , i am successfully testing a full fleshed Patch is Naveen lorem  Kumar and with this text , i am successfully testing a full fleshed Patch Request orem  Kumar and with this text , i am successfully testing a full fleshed Patch is Naveen lorem  Kumar and with this t i this is Naveen lorem  Kumar and with this text , i am successfully testing a full fleshed Patch is Naveen lorem  Kumar and with this text , i am successfully testing a full fleshed Patch Request",
+        "Image": "https://images.unsplash.com/photo-1464039397811-476f652a343b?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "username": "Divyansh",
+    "posts": [
+      {
+        "id": "cfe0aacf-e6c8-45cc-b3e3-d585d218914c",
+        "likes": 0,
+        "content": "🌿✨ Embrace the beauty of nature! From the vibrant hues of blooming flowers to the soothing sounds of rustling leaves, every moment spent outdoors is a reminder of the wonders that surround us. Nature offers a sanctuary for the soul, a place to recharge and reconnect with ourselves. Whether it's a serene forest walk, a breathtaking mountain view, or the calming waves of the ocean, each experience is a gift. Let’s cherish and protect our planet, ensuring that future generations can also enjoy its splendor. 🌍💚 What’s your favorite way to connect with nature? Share in the comments! #NatureLovers #ExploreMore\r\n\r\n\r\n\r\n\r\n",
+        "Image": "https://plus.unsplash.com/premium_photo-1673697239984-b089baf7b6e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "username": "Vashu",
+    "posts": []
+  },
+  {
+    "username": "Harsh",
+    "posts": [
+      {
+        "id": "826c9e26-46ab-4808-85e3-7b75c6a9bfab",
+        "likes": 0,
+        "content": "A Random Post Created by Harsh",
+        "Image": "https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  },
+  {
+    "username": "divyvashu",
+    "posts": [
+      {
+        "id": "06c98ced-3464-43c1-815a-9aa43fcaac48",
+        "likes": 0,
+        "content": "fuck it",
+        "Image": "https://images.unsplash.com/photo-1737587653765-94bc8fe7b541?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
+  }
+]

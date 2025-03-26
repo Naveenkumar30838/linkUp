@@ -1,0 +1,36 @@
+<!-- Rendering form to Create a New Post -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <h2>Post Something New</h2>
+    
+    <form action="http://localhost:8080/home" method="post" class="newpost">
+        <div>
+            <label for="name">UserName : </label>
+            <input id="name" type="text" name="username" placeholder="userName">
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input id="password type="password name="password" placeholder="userName">
+        </div>
+        <div>
+            <label for="Image">Image URL: </label>
+            <input type="url" name="Image" placeholder="Enter URL For Image">
+        </div>
+        <div >
+            <label for="content">Description :</label>
+            <textarea name="content" id="postContent"></textarea>
+        </div>
+        <div >
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Post Verify    </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Renders a verifier page that sends delete request , takes the route on which we are to send delete request from the user and submits form with the username and password -->
+    <%- include('includes/header.ejs')  %>
+    <h3>Delete Post Verifier</h3>
+    <form action="<%=url%>?_method=DELETE" method="post" class="signUpForm" method="post">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" value="<%=username%>" readonly>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required min="8">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

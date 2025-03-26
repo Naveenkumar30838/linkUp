@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+    <h2>SignUp</h2>
+    <form action="/profile" class="signUpForm" method="post">
+        <div>
+            <label for="username">UserName</label>
+            <input type="text" id="username" name="username" required >
+        </div>
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required min="8">
+        </div>
+        <div>
+            <label for="Image">Profile Image Url</label>
+            <input type="url" id="Image" name="image">
+        </div>
+        <div>
+            <label for="profession">Add profession</label>
+            <select name="profession" id="profession" required >
+                <option value="none" >none</option>
+                <option value="Student">Student</option>
+                <option value="government-Employee">Government Employee</option>
+                <option value="private-Employee">Private Employee</option>
+                <option value="Entreprenaur">Entreprenaur</option>
+            </select>
+        </div>
+        <div>
+            <label for="about">About</label>
+            <textarea type="text" id="about" name="about"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

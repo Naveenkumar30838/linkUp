@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'ubuntu' , 'sans-serif';
+}
+body{
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* Utility Classes and setup*/
+.pointer{
+    /* to make the cursor as hand/pointer */
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input , button , select , textarea{
+    border-radius: 4px;
+}
+
+/* Styling for Index.js */
+.header{
+    background-color: #a74343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    column-gap: 20px;
+    font-family: "Ubuntu", sans-serif;
+    padding-block:8px;
+}
+.header input,button{
+    font-size: 1.2rem;
+}
+
+.contentBox {
+    margin: 70px 0px 4px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.post {
+    width: 400px;
+    max-height: 600px;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    row-gap: 8px;
+    padding: 2px 4px;
+}
+.post-header{
+    max-height: 30px;
+    width: max-content;
+}
+.post-content{
+    max-height: 185px;
+    overflow: hidden;
+    font-size: 1.1rem;
+    
+}
+.post-image {
+    width: 390px;
+    margin: 2px 0px;
+    max-height: 400px ;
+}
+.newPostButton{
+    position: fixed;
+    top: 65px;
+    right: 20px;
+    background-color: #87e78e;
+    border-radius: 8px;
+    padding: 4px;
+}
+.signUpButton{
+    position: fixed;
+    top: 115px;
+    right: 20px;
+    background-color: #87e78e;
+    border-radius: 8px;
+    padding: 4px;
+}
+/* Style sheet for post.ejs : For showing one single / individual Post */
+.onepost{
+    background-color: #eceaea;
+    width: 400px;
+    padding: 4px 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 80px 40px;
+}
+
+/* Style sheet for NewPost page : To add a new post */
+.newpost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    justify-content: center;
+    background-color: #e8e6e6;
+    margin-block: 20px 0px;
+    padding: 12px;
+}
+.newpost div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 1.2rem;
+}
+/* For SignUp page */
+.signUpForm{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    padding: 18px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background-color: #99c3f1;
+
+}
+.signUpForm div{
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}

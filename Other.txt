@@ -1,0 +1,57 @@
+// Requesting on the profile Page 
+
+app.get('/profile/:username' , (req , res)=>{
+    const {username} = req.params;
+    const profileDatabase = readDatabase('userDatabase.json')
+    for (const profile of profileDatabase){
+        if(profile.username==username){
+            console.log("Requested UserName : " , username)
+            res.render('profile.ejs',{user:profile});
+        }
+    }
+    
+}) 
+
+
+
+// DAtabase 
+[{
+    "username": "Naveen",
+    "name":"Naveen",
+    "about":"Sophia",
+    "followers":10,
+    "following":3,
+    "postCount":2,
+    "profilePhoto":"https://drive.google.com/file/d/1-gPlJwizMtdTKRwoMGiIFsoLIzh7vpUO/view?usp=drive_link"
+}
+]
+
+
+
+// ejs 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharinc-<%= user.name %></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile_Header">
+        <h1>@<%= user.username %></h1>
+        <div class="flex">
+            <div><img src="<%= user.profilePhoto %>" alt="Profile Photos"></div>
+            <div>
+                <span>Post : <%=user.postCount%></span>
+                <span>Followers : <%=user.followers%></span>
+                <span>Following : <%=user.following%></span>
+            </div>
+        </div>
+
+        <h2><%=user.name %></h2>
+        <p><%= user.about %></p>
+
+    </div>
+</body>
+</html>

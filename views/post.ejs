@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=username + post.id%> Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header  -->
+        <%- include("includes/header.ejs") %>
+
+    <div class="onepost">
+        <div><h3>UserName : @<%= username %></h3></div>
+        <div><p><%=post.content %> </p></div>
+        <div><img src="<%=post.Image%>" alt="Image of the Post Should be Here" style="width: 400px;"></div>
+        <div>
+            <p>Likes : <%=post.likes%></p>
+            <br>
+            <span><a href="http://localhost:8080/<%=username%>/deletePost/<%=post.id %>">Delete Post</a></span>
+            <br>
+            <br>
+            <span><a href="http://localhost:8080/<%=username%>/editPost/<%=post.id %>">Edit Post</a></span>
+
+
+        </div>
+    </div>    
+</body>
+</html>

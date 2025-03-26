@@ -1,0 +1,98 @@
+[
+  {
+    "username": "Naveen",
+    "name": "Naveen",
+    "email": "naveenkumar30838@gmail.com",
+    "password": "12345678",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://images.unsplash.com/photo-1720734020504-8b5557750735?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "profession": "Entreprenaur",
+    "about": "Switching Career"
+  },
+  {
+    "username": "Divyansh",
+    "name": "Divyansh",
+    "email": "divyansh@gmail.com",
+    "password": "Divyansh@123",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://images.unsplash.com/photo-1742127213245-ee15fc6e5590?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "profession": "Student",
+    "about": "Computer Science Student at National Institute of Technology Patna "
+  },
+  {
+    "username": "Vashu",
+    "name": "Divyanshu",
+    "email": "Vashu@gmail.com",
+    "password": "Vashu@123",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://images.unsplash.com/photo-1502452213786-a5bc0a67e963?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "profession": "Entreprenaur",
+    "about": "Computer Science Student at National Institute of Technology Patna . Upcoming Entrepreneur"
+  },
+  {
+    "username": "Mannu",
+    "name": "Mannu",
+    "email": "mannu@gmail.com",
+    "password": "mannu2123",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://images.unsplash.com/photo-1634983852158-996b99c1b26f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "profession": "Student",
+    "about": "Student At NITP"
+  },
+  {
+    "username": "Nikhil",
+    "name": "Nikhil",
+    "email": "nikhil.mca24@gmail.com",
+    "password": "nikhil123",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbAyc6Yg5q_61MOsUJV63UEiV8KImysz-0Qr4ipRypbW9YWCyIXdmdNLnYTTbkUcok90vPGrzB1qHB-gCZCgLtrscVKnebAAnw7B6O81_EdU6CTkV-GE7LpZDv7E_UZHz98eXRq5LLgp_8RBAI9PMJ7dg9kU26WQTh1W_rX1DGw3XuumU1PmjM1TJw/s1600-rw/30.jpg",
+    "profession": "Student",
+    "about": "Student at NITP"
+  },
+  {
+    "username": "Shubham",
+    "name": "Shubham",
+    "email": "shubham.mca24@nitp.ac.in",
+    "password": "12345678",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://wallpaperaccess.com/full/11222450.jpg",
+    "profession": "Student",
+    "about": "Student at NITP"
+  },
+  {
+    "username": "Harsh",
+    "name": "Harsh",
+    "email": "harsh.mca24@gmail.com",
+    "password": "12345678",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDOfHXmh8-T_1vsD7I56bVfz3Hbg9R9qq1KQ&s",
+    "profession": "Student",
+    "about": "Student at NitP "
+  },
+  {
+    "username": "divyvashu",
+    "name": "Divyanshu Sharma",
+    "email": "divy15july@gmail.com",
+    "password": "12345678",
+    "postCount": 0,
+    "followers": 0,
+    "following": 0,
+    "image": "https://images.unsplash.com/photo-1502452213786-a5bc0a67e963?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "profession": "Student",
+    "about": "i am a developer"
+  }
+]

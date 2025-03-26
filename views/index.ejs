@@ -1,0 +1,56 @@
+<!-- Contains the while code of Homepage DashBoard -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header of Home page -->
+        <%- include("includes/header.ejs") %>
+    <!-- Body -->
+    <div class="contentBox" >
+        <div><h3>Feed</h3></div>
+        <% for(data of db){ %>
+            <% const ei = data.posts.length-1 %>
+            <% if(ei!=-1){ %>
+                <div id="<%=data.posts[ei].id  %>" class="post">
+                    <!-- post Header -->
+                    <div class="post-header " >
+                        <div><h2><a href="http://localhost:8080/profile/<%=data.username%>">@<%= data.username %></a></h2></div>
+                    </div>
+                    <!-- Post Body -->
+                    <div><p class="post-content"><%= data.posts[ei].content %></p></div>
+                    <!-- post Image -->
+                    <div ><img src="<%=data.posts[ei].Image%>" alt="Image of the Post Should be Here" class="post-image"></div> 
+                    <!-- post Functionalities -->
+                    <div class="flex-between">
+                        <a href="http://localhost:8080/post/<%=data.posts[ei].id%>">View Post</a>
+                        <span><a href="http://localhost:8080/<%=data.username%>/editPost/<%=data.posts[ei].id%>">Edit Post</a></span>    
+                        <span>likes:<%=data.posts[ei].likes%></sp>
+                    </div>
+            </div>
+            <% }%>
+        <% } %>  
+        <div class="newPostButton">
+            <a href="http://localhost:8080/postNew">New Post ✏️ </a>
+        </div>       
+        <div class="signUpButton">
+            <a href="http://localhost:8080/signup">New User 👤 </a>
+        </div>       
+        
+    </div>
+</body>
+<script>
+const AllPost = Array.from(document.getElementsByClassName('post'));
+
+AllPost.forEach(element => {
+    console.log("Current Element is : " , element);
+    element.addEventListener('click' , ()=>{
+        window.location.href=`http://localhost:8080/post/${element.id}`
+    })
+});
+</script>
+</html>

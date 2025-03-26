@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/profile.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>LinkUp <%=user.username %></title>
+    
+</head>
+
+<body>
+    <%-include("includes/header.ejs")%>
+    <!-- Required Data from the server userobject : username , image , about , name , postcount , followers , following , profession as keys and another object that would serve the post i.e the posts array which has multiple posts data  -->
+    <div class="profile-container">
+        <div class="profile-header flex-between">
+            <!-- Header Left  -->
+            <div class="header-left">
+                <!-- includes profile Image and About Section  -->
+                <div>
+                    <img src="<%= user.image %>" alt="Profile Picture" class="profile-img">
+                </div> 
+                <div>
+                    <h3>About</h3>
+                    <p class="bio"><%= user.about %></p>
+                </div>
+            </div>
+            <!-- Right Portion -->
+            <div class="header-right flex-center">
+                <!-- includes username , name , stats , Profession -->
+                <div class="username flex">
+                    <h2>@<%= user.username %></h2>
+                    <h3><%= user.name %></h3>
+                </div>
+                <div class="stats flex-between">
+                    <div>
+                        <span><%= user.postCount %> Posts</span>  
+                    </div>
+                    <div>
+                        <span><%= user.followers %> <span></span> Followers</span>
+                    </div>
+                    <div>
+                        <span><%= user.following %> Following</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="profession"><span ><h3>Profession : <%= user.profession %> </h3></span></p>
+                </div>        
+                <div>
+                    <span><a href="http://localhost:8080/deleteProfile/<%=user.username%>">Delete Profile</a></span>
+                </div>
+            </div>
+        </div>
+       <div class="profile-content">
+           <div class="posts flex-column">
+            <h3><a href="http://localhost:8080/postNew">New Post</a></h3>
+            <h2>Posts </h2>
+            <% if (posts!=null) { %>
+                <% for(const post of posts) {%> 
+                    <div class="eachpost flex-column">
+                        <div class="postContent"><p><%=post.content %> </p></div>
+                        <div><img src="<%=post.Image%>" alt="Image of the Post Should be Here" ></div>
+                        <div><p>Likes : <%=post.likes%></p></div>
+                        <div>
+                            <a href="http://localhost:8080/<%=user.username%>/deletePost/<%=post.id%>">Delete Post</a>
+                            <a href="http://localhost:8080/post/<%=post.id%>">View Post</a>
+                        </div>
+                    </div>
+                <%}%>
+            <% } else { %> 
+                <p>No Posts</p>
+            <% }  %> 
+            </div>
+            <h2>Similar Profiles</h2> 
+            <!-- requires name , username , image , profession -->
+            <div class="similar-profiles flex">
+                <% for (const similar_profile of similarProfiles){ %>
+                <div class="similar-profile">
+                    <div>
+                        <img src="<%=similar_profile.image%>" alt="similar-profile-name">
+                    </div>
+                    <div><h3><a href="http://localhost:8080/profile/<%= similar_profile.username %>"><%= similar_profile.name%></a></h3></div>
+                    <div><span><%= similar_profile.profession%></span></div>
+                </div>
+                <%}%>
+            </div>
+
+       </div>       
+       
+    </div>
+   
+</body>
+</html>
