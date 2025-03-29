@@ -1,14 +1,14 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const {v4 : uuidv4} = require('uuid')
+const {v4 : uuidv4} = require('uuid');
+const ejs = require('ejs');
 const methodOverride = require('method-override');
-const { url } = require('inspector');
 const app = express();
 const port = process.env.PORT || 8080;
 
 // setting for the views directory and serving static files
-app.set('view engine' , "ejs");
+app.set('view engine' , ejs);
 app.set("views" , path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname , "public")));
 
