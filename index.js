@@ -48,7 +48,6 @@ function addPostToDatabase(url , data){ // to add data of new post to database.j
             for (const dt of db){
                 if(dt.username == data.username){// the user if present in the database.json i.e he has already posted something 
                     dt.posts.push({
-                        "id":uuidv4(),
                         "likes":0,
                         "content": data.content,
                         "Image":data.Image
@@ -170,7 +169,6 @@ app.get('/profile/:username' , (req , res)=>{
 app.get('/deleteProfile/:username' , (req ,res)=>{
     // rendered form will send delete request on post/:id
     const {username }=req.params;
-    console.log("In the delete Profile page : " , username)
     res.render('delete.ejs' , {username , url : `/profile/${username}`})
 })
 // Responding for Search Page
@@ -196,7 +194,6 @@ app.get('*' , (req , res)=>{
 app.post('/home' , (req , res)=>{
     // accepting post request from the new post form -> updating the database and rendering the home page again with the updated Data
     const rt= addPostToDatabase(database , req.body)
-    console.log("Return from function is : " , rt)
     if(rt){
         // Either username or password was wrong 
         res.render('alert.ejs' , {message:"Either Wrong UserName or Password" , url:"/postNew"})
@@ -233,9 +230,6 @@ app.patch('/posts/:id' , (req , res)=>{
                 // username and password both matched ,
                 // Updating Database 
                 const db = readDatabase(database)
-                // const db = []
-                console.table("Database is : " );
-                console.table(db)
                 for (const data of db ){// searching for username in the database.json
                     if (data.username == username){
                         for (const post of data.posts){
